@@ -1,0 +1,65 @@
+name: 🐛 Bug Report
+description: 报告一个 TdCheetah 的问题
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 请清晰描述遇到的问题
+      placeholder: 我在做 ... 时，遇到了 ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 新建连接 ...
+        2. 打开 ...
+        3. 查看到 ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为
+    validations:
+      required: true
+
+  - type: input
+    id: tdengine-version
+    attributes:
+      label: TDengine 版本
+      placeholder: 例如 3.3.6
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: TdCheetah 版本
+      placeholder: 例如 0.1.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: 操作系统
+      options:
+        - Windows 10/11
+        - macOS
+        - Linux
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志 / 截图
+      description: DevTools Console 的报错、终端输出、或者截图
+      render: shell

@@ -1,0 +1,14 @@
+node_modules
+dist
+dist-electron
+release
+build/icon.png
+auto-imports.d.ts
+components.d.ts
+
+*.log
+.DS_Store
+.vscode
+.idea
+.env
+.env.local
